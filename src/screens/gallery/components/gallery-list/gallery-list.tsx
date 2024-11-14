@@ -12,6 +12,7 @@ import { Photo } from '@core/types'
 import { usePhotos } from '@hooks'
 
 import { GalleryItem } from './gallery-item'
+import {hapticFeedback} from '@core';
 
 export const GalleryList = () => {
   const uniqKey = useId()
@@ -34,6 +35,11 @@ export const GalleryList = () => {
     [],
   )
 
+  const onRefetch = useCallback(() => {
+    hapticFeedback()
+    void refetch()
+  }, [])
+
   return (
     <FlashList<Photo>
       numColumns={2}
@@ -48,7 +54,7 @@ export const GalleryList = () => {
         <RefreshControl
           tintColor={theme.palette.main}
           refreshing={isRefetching}
-          onRefresh={refetch}
+          onRefresh={onRefetch}
         />
       }
       contentContainerStyle={{
