@@ -12,5 +12,5 @@
 - Pull to refresh
 
 ## BUILDS
-- [Link for android apk file](htttp://googledrive.com)
-- [Link for ios ipa file](htttp://googledrive.com)
+- [Link for android apk file](https://googledrive.com)
+- [Link for ios ipa file](https://googledrive.com)

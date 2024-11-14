@@ -1,5 +1,5 @@
 export const lightPalette: ThemePalette = {
-  background: '#fbfbfb',
+  background: '#f3f2f2',
   main: '#5532fa',
   blue: '#0082f3',
   placeholder: '#e3e3e3',

@@ -15,6 +15,7 @@ export const MainStack = createNativeStackNavigator<NavigationMainStack>()
 
 export const MAIN_NAVIGATOR_OPTIONS = {
   gestureEnabled: true,
+  headerShadowVisible: false
 }
 
 export const MainNavigator = () => {
