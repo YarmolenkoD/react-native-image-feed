@@ -9,7 +9,7 @@ interface GetPhotosParams {
 
 const getPhotos = async (params: GetPhotosParams) => {
   const result = await api.get<GetPhotosResponse>(
-    `/curated?page=${params.page}&per_page=${params.perPage || 15}`,
+    `/curated?page=${params.page}&per_page=${params.perPage || 16}`,
   )
 
   return result.data
