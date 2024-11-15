@@ -13,8 +13,7 @@
 
 ## BUILDS
 
-- [Link for android apk file](https://googledrive.com)
-- [Link for ios ipa file](https://googledrive.com)
+- [Link for android apk file](https://drive.google.com/file/d/1bQVhT-NOdBbWHN8YzeVwkBS6SngzzM1F/view?usp=sharing)
 
 ## VERSIONS
 
