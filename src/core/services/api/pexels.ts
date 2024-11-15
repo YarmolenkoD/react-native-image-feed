@@ -1,6 +1,6 @@
-import { api } from '../index.ts'
+import { api } from '@core/services'
 
-import { PaginationResponse, Photo } from '../../types'
+import { PaginationResponse, Photo } from '@core/types'
 
 interface GetPhotosParams {
   page: number

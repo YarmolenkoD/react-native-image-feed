@@ -1,5 +1,7 @@
 import { Platform, TextStyle, ViewStyle } from 'react-native'
 
+import { defaultPalette } from '@core'
+
 interface Styles {
   wrapper: ViewStyle
   title: TextStyle
@@ -15,11 +17,11 @@ export default {
     paddingTop: Platform.OS === 'ios' ? 65 : 45,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: defaultPalette.white,
   },
   title: {
     textAlign: 'center',
-    color: '#1B1756',
+    color: defaultPalette.main,
     paddingHorizontal: 32,
     maxWidth: 300,
   },
@@ -27,11 +29,11 @@ export default {
     marginTop: 20,
     marginBottom: 12,
     borderBottomWidth: 0.25,
-    borderBottomColor: '#3E35B2',
+    borderBottomColor: defaultPalette.blue,
   },
   detailButtonText: {
     paddingBottom: 2,
-    color: '#3E35B2',
+    color: defaultPalette.blue,
   },
   errorTextWrapper: {
     marginTop: 20,

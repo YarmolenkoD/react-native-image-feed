@@ -8,11 +8,11 @@ import { FlashList } from '@shopify/flash-list'
 
 import { useTheme } from '@core/theme'
 import { Photo } from '@core/types'
+import { hapticFeedback } from '@core/utils'
 
 import { usePhotos } from '@hooks'
 
 import { GalleryItem } from './gallery-item'
-import {hapticFeedback} from '@core';
 
 export const GalleryList = () => {
   const uniqKey = useId()
@@ -35,9 +35,9 @@ export const GalleryList = () => {
     [],
   )
 
-  const onRefetch = useCallback(() => {
+  const onRefetch = useCallback(async () => {
     hapticFeedback()
-    void refetch()
+    const res = await refetch()
   }, [])
 
   return (

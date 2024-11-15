@@ -20,13 +20,14 @@ export const DetailsScreen = () => {
   return (
     <View style={[s.relative, s.flex(1)]}>
       <FastImage
+        fallback
         style={[
           s.width('100%'),
           s.height('100%'),
           s.bg(data.avg_color || 'placeholder'),
         ]}
         source={{
-          uri: data.src.original,
+          uri: data.src.large,
           priority: FastImage.priority.high,
           cache: FastImage.cacheControl.immutable,
         }}
@@ -40,7 +41,7 @@ export const DetailsScreen = () => {
           s.width('100%'),
           s.px(4),
           s.py(4),
-          s.paddingBottom(bottom),
+          s.paddingBottom(bottom || 16),
           s.bg('rgba(0,0,0,0.3)'),
         ]}
       >
