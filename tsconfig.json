@@ -10,6 +10,7 @@
       "@assets": ["./src/assets"],
       "@assets/images": ["./src/assets/images"],
       "@components": ["./src/components"],
+      "@config": ["./src/config"],
       "@i18n": ["./src/i18n"],
       "@navigation": ["./src/navigation"],
       "@screens": ["./src/screens"],
