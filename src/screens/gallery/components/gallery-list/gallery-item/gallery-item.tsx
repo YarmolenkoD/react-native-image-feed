@@ -6,8 +6,6 @@ import { NavigationProp, useNavigation } from '@react-navigation/native'
 
 import FastImage from 'react-native-fast-image'
 
-import Animated, { FadeIn } from 'react-native-reanimated'
-
 import { Photo } from '@core/types'
 import { useBaseStyles } from '@core/theme'
 import { hapticFeedback } from '@core/utils'
@@ -21,8 +19,6 @@ interface GalleryItemProps {
 
 export const GalleryItem = (props: GalleryItemProps) => {
   const { data, index } = props
-
-  const [isLoaded, setLoaded] = useState(false)
 
   const navigation = useNavigation<NavigationProp<NavigationMainStack>>()
 
@@ -72,7 +68,6 @@ export const GalleryItem = (props: GalleryItemProps) => {
               priority: FastImage.priority.high,
               cache: FastImage.cacheControl.immutable,
             }}
-            onLoadEnd={() => setLoaded(true)}
             resizeMode={FastImage.resizeMode.cover}
           />
           <View
