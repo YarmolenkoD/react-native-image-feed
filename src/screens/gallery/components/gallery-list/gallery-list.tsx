@@ -35,9 +35,9 @@ export const GalleryList = () => {
     [],
   )
 
-  const onRefetch = useCallback(async () => {
+  const onRefetch = useCallback(() => {
     hapticFeedback()
-    const res = await refetch()
+    void refetch()
   }, [])
 
   return (
